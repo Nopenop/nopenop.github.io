@@ -40,7 +40,18 @@ export function MyButton() {
 
 export function MyCard() {
   return (
-    <button>I'm a button</button>
+    <div>
+      <div class="title"></div>
+      <div class="title"></div>
+    </div>
   );
 }
 
+// card component
+//
+// Card
+//   Title
+//   Image
+//   Description
+//    link
+//    message

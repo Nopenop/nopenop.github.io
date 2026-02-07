@@ -77,3 +77,7 @@ These include a name: value pair.
 #### Generic Attributes
 
 1. align: right, left, center
+
+## Interface Design
+
+Basically, I am going to rip off dating apps for the design of my portfolio.
