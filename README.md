@@ -78,6 +78,42 @@ These include a name: value pair.
 
 1. align: right, left, center
 
+## CSS
+
+Yup, I need to review my CSS.
+
+CSS is used to define styles fo rweb pages, including design, layout, and variations in display for different devices and screen sizes.
+
+### CSS Syntax
+
+CSS rule consists of a selector and a declaration block:
+
+1. Select: this can either be an element, id, or class.
+2. declaration: Set of parameters you would like to style.
+
+### Selectors Continued
+
+The selector is the beginning of any block in CSS. The most basic case is to use a single element selector. This can just be done by using the name of the element.
+
+#### id selector
+
+This is used to select a specific element by their id.
+
+Use the "#" followed by the name of the id.
+
+#### class selector
+
+Used to select elements by their class.
+
+Use the "." followed by the name of the class.
+
+#### Grouping
+
+There are several ways to logically group css rules, including:
+
+1. *: selects all HTML elements on the page
+1. ,: used to group selectors, including id, class, and element selectors.
+
 ## Interface Design
 
 Basically, I am going to rip off dating apps for the design of my portfolio.
