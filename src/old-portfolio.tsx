@@ -1,4 +1,9 @@
 
+// import code from './assets/code.png';
+import hash_lib from './assets/hash_lib.png';
+import head_shot from './assets/head_shot.jpg';
+import system_monitor from './assets/system_monitor.png';
+
 export default function OldPortfolio() {
   return (<>
     <title>Noah Campise's Portfolio</title>
@@ -21,7 +26,7 @@ export default function OldPortfolio() {
         <div id="title-card" className="box">
           <h1>I am Noah Campise</h1>
           <img
-            src="photos/head_shot.jpg"
+            src={head_shot}
             id="head_shot"
             alt="Head shot of Noah Campise"
           />
@@ -37,13 +42,13 @@ export default function OldPortfolio() {
       </div>
       <div id="projects">
         <div className="box">
-          <img src="photos/system_monitor.png" alt="System monitor application image" />
+          <img src={system_monitor} alt="System monitor application image" />
           <a href="https://github.com/Nopenop/HW-19-API" target="_blank">
             System monitor application
           </a>
         </div>
         <div className="box">
-          <img src="photos/hash_lib.png" alt="Brute force hashlib script" />
+          <img src={hash_lib} alt="Brute force hashlib script" />
           <a
             href="https://github.com/Nopenop/L13-hashlib-logging/blob/main/hash_solve.py"
             target="_blank"
@@ -52,7 +57,7 @@ export default function OldPortfolio() {
           </a>
         </div>
         <div className="box">
-          <img src="photos/hash_lib.png" alt="Projectile motion simulator" />
+          <img src={hash_lib} alt="Projectile motion simulator" />
           <a
             href="https://github.com/Nopenop/L09-homework-canonball"
             target="_blank"
