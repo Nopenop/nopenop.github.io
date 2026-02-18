@@ -1,0 +1,107 @@
+% ----------
+% A LaTeX template for course project reports
+% 
+% This template is modified from "Tech Report ala MIT AI Lab (1981)"
+% 
+% ----------
+\documentclass[12pt, letterpaper, twoside]{article}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[runin]{abstract}
+\usepackage{titling}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{helvet}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage{parskip}
+\usepackage{etoolbox}
+\usepackage{hyphenat}
+\usepackage{listings}
+\input{preamble.tex}
+
+% ----------
+% Variables
+% ----------
+
+\title{\textbf{Portfolio Project Notes\\Creation of Dating App Inspired Portfolio Website}} % Full title of your tech report
+\runningtitle{Notes Format} % Short title
+\author{Noah Campise} % Full list of authors
+\runningauthor{Noah Campise} % Short list of authors
+\affiliation{Portfolio Website} % Affiliation e.g. University or Company
+\theyear{2026} % year of the tech report
+\mydate{February 18th, 2026} %the date
+
+
+% ----------
+% actual document
+% ----------
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    \noindent
+    These notes are to document my work on my portfolio website. I would like to have my sources for research documented and my decisions written down in order to show other's my work.
+    
+
+    % Uncomment the following to add keywords as needed
+    % \keywords{Keyword1, Keyword2, Keyword3}
+\end{abstract}
+
+\vspace{2.5cm}
+
+% Uncomment the following to add thanks.
+% {\footnotesize
+%     \noindent
+%     Special thanks to \textbf{Person 1} and \textbf{Affiliation A} for financial support for this project.
+% }
+
+\thispagestyle{firstpage}
+
+\pagebreak
+
+% ----------
+% End of first page
+% ----------
+
+\newgeometry{} % Redefine geometries (normal margins)
+
+
+\input{research.tex}
+
+
+\section{Conclusions}
+\label{sec:conc}
+
+Tech Report writing is an art.
+
+% Uncomment following to add an acknowledgement section
+% \section*{Acknowledgements}
+
+% Thanks again to \textbf{Person 1} and \textbf{Affiliation A} for their financial support.
+
+% ----------
+% Bibliography
+% ----------
+
+% Uncomment the following and add your references into biblio.bib file
+\bibliography{./biblio.bib}
+\bibliographystyle{abbrv}
+
+\appendix
+
+\section{An appendix}
+
+
+\section{Another appendix}
+
+\subsection*{Subsectioning in appendix}
+
+Some more text, and a list:
+
+
+\end{document}
+
+% ----------

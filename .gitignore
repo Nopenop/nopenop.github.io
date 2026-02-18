@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# For latex notes
+**/*.aux
+**/*.fdb_latexmk
+**/*.log
+**/*.synctex.gz
+**/*.fls
+**/*.blg
+**/*.bbl
