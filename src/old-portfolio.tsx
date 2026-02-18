@@ -1,4 +1,3 @@
-
 // import code from './assets/code.png';
 import hash_lib from './assets/hash_lib.png';
 import head_shot from './assets/head_shot.jpg';
