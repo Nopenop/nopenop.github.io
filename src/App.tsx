@@ -1,9 +1,14 @@
-import * as React from 'react';
+// import * as React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Slider from '@mui/material/Slider';
 import PopoverMenu from './PopoverMenu';
+import Button from '@mui/material/Button'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import BasicCard from './card.tsx';
+
+import 'swiper/swiper.css';
 
 function Copyright() {
   return (
@@ -27,6 +32,18 @@ function Copyright() {
 export default function App() {
   return (
     <Container maxWidth="sm">
+      <Button variant='contained'>Hello world</Button>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={1}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+        initialSlide={1}
+      >
+        <SwiperSlide><BasicCard /> </SwiperSlide>
+        <SwiperSlide><BasicCard /></SwiperSlide>
+        <SwiperSlide><BasicCard /></SwiperSlide>
+      </Swiper>
       <div className="my-4">
         <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
           Material UI Vite example with Tailwind CSS in TypeScript

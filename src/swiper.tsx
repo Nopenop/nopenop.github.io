@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ActionAreaCard from './card.tsx'
 
-import "swiper/css";
+import 'swiper/swiper.css';
 
 export default function SwiperInstance() {
   return (
