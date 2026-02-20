@@ -1,19 +1,10 @@
-import { StrictMode, Fragment } from 'react'
-import { createRoot } from 'react-dom/client'
-// import './styles.css'
+import * as React from 'react';
+import * as ReactDOM from 'react-dom/client';
+import App from './App.tsx';
 import './index.css'
-// import { MyButton } from './App.tsx'
-// import { Profile, FirstComponent } from './first-component.tsx'
-// import Gallery from './first-component.tsx'
-import OldPortfolio from './old-portfolio.tsx'
-import Card from './card.tsx'
-import SwiperInstance from './swiper.tsx'
-import CssBaseline from '@mui/material/CssBaseline';
 
-
-createRoot(document.getElementById('root')!).render(
-  <Fragment>
-    <CssBaseline />
-    <SwiperInstance />
-  </Fragment>
-)
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+);
