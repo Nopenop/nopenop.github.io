@@ -14,12 +14,16 @@ const bull = (
   </Box>
 );
 
-export default function BasicCard() {
+type basicCardInput = {
+  value: number
+}
+
+export default function BasicCard({ input }: { input: basicCardInput }) {
   return (
     <Card sx={{ minWidth: 100, width: 1 / 2, }}>
       <CardContent>
         <Typography gutterBottom sx={{ color: 'text.secondary', fontSize: 14 }}>
-          Word of the Day
+          Word of the Day {input.value}
         </Typography>
         <Typography variant="h5" component="div">
           be{bull}nev{bull}o{bull}lent
