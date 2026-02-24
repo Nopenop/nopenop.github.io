@@ -19,46 +19,41 @@ function SlidePrevButton() {
   );
 }
 
-interface SwiperInterfaceState {
-  input: number
-}
 
-function SwiperCard(value: number, setNumber: (a: SwiperInterfaceState) => void) {
+function SwiperCard({ value, setNumber }: { value: number, setNumber: (a: number) => void }) {
   return (
     <Swiper
       slidesPerView={1}
       onSlideChange={(swiper) => {
-        setNumber({ input: swiper.activeIndex })
-        console.log(swiper.swipeDirection)
+        setNumber(value + 1)
       }}
+      onSlidePrevTransitionEnd={(swiper) => {
+        swiper.slideNext(0)
+        swiper.slideNext(0)
+      }}
+      // onSlideNextTransitionEnd={(swiper) => {
+      //   swiper.slideNext(0)
+      // }}
       initialSlide={1}
-      loop={true}
     >
       <SwiperSlide></SwiperSlide>
-      <SwiperSlide><BasicCard input={{ value: value }} /></SwiperSlide>
+      <SwiperSlide><BasicCard input={{ value: 1 }} /></SwiperSlide>
       <SwiperSlide></SwiperSlide>
+      <SwiperSlide><BasicCard input={{ value: 2 }} /></SwiperSlide>
+      <SwiperSlide></SwiperSlide>
+      <SwiperSlide><BasicCard input={{ value: 3 }} /></SwiperSlide>
       <SlidePrevButton />
       <SlideNextButton />
     </Swiper >
   );
 }
 
-export default function SwipeInterface(input: SwiperInterfaceState) {
-  const [number, setNumber] = useState(input)
+export default function SwipeInterface({ input }: { input: number }) {
+  const [value, setValue] = useState(input)
 
-  if (number.input == 0) {
-    return (
-      SwiperCard(0, setNumber)
-    );
-  } else if (number.input == 1) {
-    return (
-      SwiperCard(1, setNumber)
-    );
-  } else {
-    return (
-      SwiperCard(2, setNumber)
-    );
-  }
+  return (
+    <SwiperCard value={value} setNumber={setValue} />
+  );
 }
 
 
