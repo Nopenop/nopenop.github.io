@@ -82,7 +82,7 @@ function SidebarNav({ activeIndex }: { activeIndex: number }) {
 // Individual slides
 // ─────────────────────────────────────────────
 
-function HeroSlide({ onNext }: { onNext: () => void }) {
+function HeroSlide() {
   const swiper = useSwiper();
   return (
     <div className="nc-slide nc-slide--hero">
@@ -213,7 +213,7 @@ function AboutSlide() {
 //   <SwiperInterface input={1} />
 // ─────────────────────────────────────────────
 
-export default function SwiperInterface({ input }: { input: number }) {
+export default function SwiperInterface() {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   return (
@@ -230,7 +230,7 @@ export default function SwiperInterface({ input }: { input: number }) {
         {/* Sidebar lives inside Swiper so it can call useSwiper() */}
         <SidebarNav activeIndex={activeIndex} />
 
-        <SwiperSlide><HeroSlide onNext={() => { }} /></SwiperSlide>
+        <SwiperSlide><HeroSlide /></SwiperSlide>
         <SwiperSlide><ExperienceSlide /></SwiperSlide>
         <SwiperSlide><CloudSlide /></SwiperSlide>
         <SwiperSlide><MLSlide /></SwiperSlide>
