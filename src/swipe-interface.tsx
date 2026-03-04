@@ -1,9 +1,7 @@
-import { Swiper, SwiperSlide, useSwiper, type SwiperClass } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import BasicCard from './card.tsx';
 import Button from '@mui/material/Button'
-import * as React from 'react';
 import { useState } from 'react';
-import { Pagination, Navigation } from 'swiper/modules';
 
 function SlideNextButton() {
   const swiper = useSwiper();
@@ -24,10 +22,10 @@ function SwiperCard({ value, setNumber }: { value: number, setNumber: (a: number
   return (
     <Swiper
       slidesPerView={1}
-      onSlideChange={(swiper) => {
+      onSlideChange={() => {
         setNumber(value + 1)
       }}
-      onSlidePrevTransitionEnd={(swiper) => {
+      onSlidePrevTransitionStart={(swiper) => {
         swiper.slideNext(0)
         swiper.slideNext(0)
       }}
@@ -38,9 +36,7 @@ function SwiperCard({ value, setNumber }: { value: number, setNumber: (a: number
     >
       <SwiperSlide></SwiperSlide>
       <SwiperSlide><BasicCard input={{ value: 1 }} /></SwiperSlide>
-      <SwiperSlide></SwiperSlide>
       <SwiperSlide><BasicCard input={{ value: 2 }} /></SwiperSlide>
-      <SwiperSlide></SwiperSlide>
       <SwiperSlide><BasicCard input={{ value: 3 }} /></SwiperSlide>
       <SlidePrevButton />
       <SlideNextButton />
