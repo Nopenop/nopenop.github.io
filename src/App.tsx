@@ -4,7 +4,8 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import SwiperInterface from './swipe-interface';
+// import SwiperInterface from './swipe-interface';
+import SwiperInterface from '../claude_stuff/swipe-interface.tsx'
 
 import 'swiper/swiper.css';
 
