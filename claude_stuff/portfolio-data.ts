@@ -2,7 +2,7 @@ export type Chip = { label: string; color?: 'green' | 'blue' | 'pink' };
 
 export type CardData = {
   tag: string;
-  tagColor?: 'green' | 'blue' | 'pink';
+  tagColor?: 'green' | 'blue' | 'pink' | 'purple';
   title: string;
   bullets?: string[];
   body?: string;
@@ -58,6 +58,13 @@ export const experienceCards: CardData[] = [
     title: 'Rotaract Member — Florida Polytechnic University',
     body: 'Volunteered in community and school events, building leadership and civic engagement skills.',
     date: 'October 2023 — Present',
+  },
+  {
+    tag: 'Education',
+    tagColor: 'purple',
+    title: 'Teaching Assistant',
+    body: 'Tutored undergraduate students in fundamentals of C programming language.',
+    date: 'January 2023 - May 2024',
   },
 ];
 

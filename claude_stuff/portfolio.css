@@ -10,9 +10,10 @@
   --nc-surface:  #111118;
   --nc-card:     #16161f;
   --nc-border:   #2a2a3a;
-  --nc-accent:   #7fff6e;
-  --nc-accent2:  #6e9fff;
-  --nc-accent3:  #ff6e9f;
+  --nc-accent:   #7fff6e; 
+  --nc-accent2:  #6e9fff; 
+  --nc-accent3:  #ff6e9f; 
+  --nc-accent4:  #A020F0; 
   --nc-text:     #e8e8f0;
   --nc-muted:    #6b6b80;
   --nc-mono:     'Space Mono', 'Courier New', monospace;

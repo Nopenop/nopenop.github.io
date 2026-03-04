@@ -1,13 +1,10 @@
-// portfolio-card.tsx
-// Drop-in replacement for card.tsx
-// Usage: <PortfolioCard card={cardData} />
-
 import type { CardData } from './portfolio-data';
 
 const COLOR_MAP = {
   green: 'var(--nc-accent)',
   blue: 'var(--nc-accent2)',
   pink: 'var(--nc-accent3)',
+  purple: 'var(--nc-accent4)',
 };
 
 export default function PortfolioCard({ card }: { card: CardData }) {

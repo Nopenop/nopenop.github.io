@@ -16,10 +16,6 @@ import {
 
 import './portfolio.css';   // ← add the new CSS file (provided separately)
 
-// ─────────────────────────────────────────────
-// Small reusable pieces
-// ─────────────────────────────────────────────
-
 function SlideHeader({ index, label }: { index: string; label: string }) {
   return (
     <div className="nc-slide-label">
@@ -185,21 +181,23 @@ function AboutSlide() {
       <div className="nc-card-grid nc-card-grid--1 nc-card-grid--narrow">
         <PortfolioCard
           card={{
-            tag: 'Education',
-            tagColor: 'green',
-            title: 'Florida Polytechnic University',
-            body: 'B.S. Computer Science — Expected May 2026\nCumulative GPA: 3.95 / 4.0\n\nRelevant Coursework: Natural Language Processing, Autonomous Programming, UI/UX, Database I, Data Structures, Machine Learning, OS Concepts, OOP',
-          }}
-        />
-        <PortfolioCard
-          card={{
             tag: 'Contact',
             tagColor: 'blue',
             title: 'Get in Touch',
             bullets: [
               '✉ campisenoah1@gmail.com',
               '✆ +1 (724) 205-8325',
-              '📍 Irwin, Pennsylvania',
+            ],
+          }}
+        />
+        <PortfolioCard
+          card={{
+            tag: 'Socials',
+            tagColor: 'blue',
+            title: 'Connect',
+            bullets: [
+              'https://www.linkedin.com/in/noah-campise-7426aa248/',
+              'https://github.com/Nopenop'
             ],
           }}
         />
